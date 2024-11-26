@@ -2,7 +2,7 @@
 
 This is an 81 practice python progam.
 
-As such, I recommend the following steps:
+As such, the following steps are recommended as per the author:
 
 Download the program and run it to see what the program does for yourself.
 Starting from a blank file, copy the code of the game from this book by manually typing it yourself. (Don’t use copy and paste!)
