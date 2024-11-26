@@ -32,25 +32,18 @@ Fermi Pico Bagels""".format(
                 print("Guess #{}: ".format(num_guesses))
                 guess = input("> ").upper()
 
-            clues = get_clues(guess.capitalize(), secret_string)
+            clues = get_clues(guess, secret_string)
             print(clues)
+            num_guesses += 1
 
-            if clues == "You got it!":
+            if guess == secret_string:
                 break
-            else:
-                num_guesses += 1
-
-        if clues == "You got it!":
-            print("You got it in {} guesses!".format(num_guesses))
-        else:
-            print(
-                "Sorry, you ran out of guesses. The word was {}.".format(secret_string)
-            )
-
+            if num_guesses > MAX_GUESSES:
+                print("You ran out of guesses.")
+                print("The answer was {}.".format(secret_string))
         print("Do you want to play again? (yes or no)")
         if not input("> ").lower().startswith("y"):
             break
-
     print("Thanks for playing!")
 
 

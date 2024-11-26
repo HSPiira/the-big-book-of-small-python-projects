@@ -30,6 +30,7 @@ The number 0 appears after the second instruction if everything worked correctly
 ```python
 import os, sys
 os.system(sys.executable + ' -m pip install bigbookpython')
+0
 ```
 
 No matter which editor you use, you can try running import pyperclip or import bext to check if the installation worked. If these import instruction don’t produce an error message, these modules installed correctly and you’ll be able to run the projects in this book that use these modules.
